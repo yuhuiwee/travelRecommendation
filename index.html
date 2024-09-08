@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TravelBloom</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<nav>
+    <div class="header">
+        <i class="fa fa-plane"></i>
+        <h1>TravelBloom</h1>
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="./index.html" id="home">Home </a></li>
+            <li><a href="./about/about.html" id="about">About Us </a></li>
+            <li><a href="./contact/contact.html" id="contact">Contact Us </a></li>
+        </ul>
+    </div>
+    <div id="search" class ="search">
+        <input type="text" id="searchInput" placeholder="Enter a destination or a keyword"> 
+        <i class="fa fa-search"></i>
+        <button id='btnSearch'>Search</button>
+        <button id='btnClear'>Clear</button>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="socials">
+        <div class="vertical-line"></div>
+        <a href="https://x.com/"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.youtube.com/"><i class="fa fa-youtube-play"></i></a>
+    </div>
+    <div class="main" id = "main">
+        <div id="titleDiv"></div>
+        <div id="searchResult"></div>
+        </div>
+    </div>
+</div>
+<script src="./travel_recommendation.js"></script>
+</body>
+</html>

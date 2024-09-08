@@ -1,0 +1,23 @@
+{
+    "team":[
+        {
+            "id": 1,
+            "name": "John Doe",
+            "description": "John is responsible for... ",
+            "designation": "CEO"
+        },
+        {
+            "id": 2,
+            "name": "Celina Thomas",
+            "description": "Celina is responsible for... ",
+            "designation": "Team Lead"
+        },
+        {
+            "id": 3,
+            "name": "Mike Tyson",
+            "description": "Mike is responsible for... ",
+            "designation": "Delivery Head"
+        }
+
+    ]
+}

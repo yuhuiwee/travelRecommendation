@@ -1,0 +1,298 @@
+/* Basic CSS for the navigation bar */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    background-color: #0b4a3c;
+    display: block;
+    justify-content: space-between;
+    height: 50px;
+    flex-direction: row;
+  }
+    nav .header{
+        width: 33%;
+        display: inline;
+        float: left;
+        align-content: center;
+        height: inherit;
+    }
+        nav .header h1{
+            font-weight: 600;
+            color: white;
+            font-style: italic;
+            margin-left: 10px;
+            display: inline;
+        }
+        nav .header i{
+            color: transparent;
+            transform: scale(1.5);
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: white;
+            padding-left: 10px;
+            padding-top: 5px;
+            display: inline;
+        }
+    nav .menu {
+        display: inline-block;
+        height: inherit;
+        align-content: center;
+        align-self: center;
+    }
+        nav .menu ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+  
+        nav .menu a {
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+        }
+        nav .menu a:hover{
+            color: #189c7f;
+        }
+
+    nav .search{
+        background-color: white;
+        border-radius: 25px;
+        display: inline;
+        height: 40px;
+        margin: 2px;
+        float: right;
+        width: fit-content;
+    }
+        nav .search input{
+            display: inline;
+            outline: none;
+            border: none;
+            color: black;
+            height: inherit;
+            margin: 0;
+            padding: 10px;
+            padding-left: 20px;
+            background-color: transparent;
+        }
+        nav .search button{
+            display: inline;
+            border-radius: 10px;
+            background-color: #116a57;
+            color: white;
+            border: none;
+            width: fit-content;
+            text-align:center;
+            height: fit-content;
+            padding: 5px;
+        }
+        nav .search button:hover{
+            display: inline;
+            background-color: #116a577b;
+            color: aliceblue;
+            border: none;
+        }
+        nav .search i{
+            display: inline;
+            align-self: center;
+            margin: 2px;
+        }
+  
+  /* Basic CSS for the form elements */
+  body {
+    font-family: 'Times New Roman', Times, serif;
+    background-repeat: no-repeat;
+    background:
+    /* linear-gradient(to right,
+        rgba(31, 100, 168, 0.2) 25%,
+        rgba(74, 130, 186, 0.1) 50%,
+        rgba(255,255,255,0.1)),  */
+    url("https://wallpapers.com/images/featured/beach-sunset-bwvid0licus1pjda.jpg");
+    background-blend-mode: color-burn;
+  }
+
+
+  .socials{
+    position: absolute;
+    width: 5%;
+    top: 30%;
+    height: 50%;
+    margin: 0;
+    display: grid;
+  }
+    .socials .vertical-line{
+        width: 2px;
+        height: 100px;
+        background-color: white;
+        margin: 0 auto;
+    }
+    .socials a i{
+        padding-left: 30%;
+        color: white;
+        scale: 150%;
+    }
+    .socials a i:hover{
+        color: rgba(255, 255, 255, 0.7);
+        transform:scale(1.2);
+    }
+.main{
+    position: absolute;
+    display: block;
+    width: 95%;
+    left: 10%;
+    height: 100%;
+    color: whitesmoke;
+    margin: 0;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+    .main #titleDiv{
+        display: inline-block;
+        width: 25%;
+        white-space: pre-wrap;
+        position: absolute;
+        top: 40%;
+
+    }
+    .main #titleDiv h1{
+        display: inline-block;
+        width: 100%;
+    }
+
+    .main #titleDiv p{
+        text-align: justify;
+        display: block;
+        position:relative;
+    }
+
+    .main #searchResult{
+        width: 40%;
+        position:absolute;
+        top:0;
+        right: 0;
+    }
+
+
+    .main #searchResult .city{
+        border-radius: 25px;
+        background-color: white;
+        margin-bottom: 5%;
+        color: black;
+        overflow: hidden;
+        animation: 1s ease-out 0s 1 slideInFromLeft;
+    }
+
+        .main #searchResult .city img{
+            width: 100%;
+            align-self: center;
+        }
+
+        .main #searchResult .city p, h1{
+            padding: 5%;
+        }
+    #loadMore {
+        background-color: #116a57;
+        font-size: large;
+        outline: transparent;
+        border-radius: 15px;
+        padding: 2%;
+        color: white;
+        font-weight: bold;
+        border-color: transparent;
+        width: 100%;
+    }
+    #aboutus{
+        display: block;
+        top: 10%;
+        position: absolute;
+    }
+
+    .main #teamDiv{
+        display: inline-block;
+        position:fixed;
+        right: 10%;
+        padding: 20px;
+        bottom: 20%;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+        margin: 10px;
+    }
+
+    .teamMember{
+        float: left;
+    }
+
+    .teamMember h1{
+        font-weight: bolder;
+    }
+    .teamMember h2 p {
+        width: 100%;
+        text-align: justify;
+        padding: 10px;
+    }
+
+    .teamMember p{
+        width: 90%;
+        text-align: justify;
+        padding: 10px;
+    }
+
+    .teamMember .role{
+        background-color: #0b4a3c;
+        border-radius: 20px;
+        text-align: center;
+        width: 80%;
+    }
+
+    #contactDesc{
+        display: inline-block;
+        width: 30%;
+        top: 40%;
+        position: absolute;
+    }
+
+    #contactForm {
+        display: inline-block;
+        font-size: larger;
+        width:  40%;
+        position: absolute;
+        right: 0;
+        top: 20%;
+    }
+
+    #contactForm label {
+        display: block;
+        font-weight: bold;
+    }
+
+    #contactForm input, textarea{
+        background-color: rgba(255, 255, 255, 0.2);
+        border: transparent;
+        border-radius: 10px;
+        color: white;
+        padding: 10px;
+        margin: 10px;
+        font-size: large;
+        width: 100%;
+    }
+
+    #contactForm button{
+        position: relative;
+        width: fit-content;
+        height: 10%;
+        background-color:#116a57;
+        outline: transparent;
+        border: transparent;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateY(-50%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
